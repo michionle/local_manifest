@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/kenzo" name="briant24/device_xiaomi_kenzo.git" remote="github" revision="11" />
+ <project path="vendor/xiaomi/kenzo" name="Irawans-Android-Lab/vendor_xiaomi_kenzo.git" remote="github" revision="11" />
+ <project path="kernel/xiaomi/kenzo" name="Irawans-Android-Lab/kernel_xiaomi_kenzo.git" remote="github" revision="main" />
+ 
+</manifest>
