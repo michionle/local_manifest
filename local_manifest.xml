@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
 
- <remote  name="githb" fetch="https://github.com" />
- <!-- Trees -->
- <project path="device/xiaomi/kenzo" name="briant24/device_xiaomi_kenzo.git" remote="githb" revision="11" />
- <project path="vendor/xiaomi/kenzo" name="Irawans-Android-Lab/vendor_xiaomi_kenzo.git" remote="githb" revision="11" />
- <project path="kernel/xiaomi/kenzo" name="Irawans-Android-Lab/kernel_xiaomi_kenzo.git" remote="githb" revision="main" />
- 
+<manifest>
+        
+        <!-- remote -->
+        <remote name="me"
+        fetch="https://github.com/michionle" />
+        <remote name="michi"
+        fetch="https://github.com/mipa-ginkgo" />
+        <remote name="af"
+        fetch="https://github.com/crdroidandroid" />
+        <remote name="arrow-gl"
+        fetch="https://gitlab.com/arrowos-project" />
+        
+        <!-- Replacement -->
+        <remove-project name="android_frameworks_base" />
+        <remove-project name="android_hardware_qcom_audio" />
+        <remove-project name="android_hardware_qcom_display" />
+        <remove-project name="android_hardware_qcom_media" />
+        <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
+        <remove-project name="android_vendor_arrow" />
+        <remove-project name="android_packages_apps_Settings" />
+        <remove-project name="android_build" />
+        <remote-project name="platform/build" />
+        <remove-project name="android_packages_apps_DeskClock" />
+        <remove-project name="android_bionic" />
+        <remove-project name="android_packages_apps_Launcher3" />
+        <remove-project name="android_packages_modules_Bluetooth" />
+        
+        <project path="packages/apps/ArrowLab" name="packages_apps_ArrowLab" remote="michi" revision="arrow-13.1-wip" />
+        <project path="bionic" name="android_bionic" remote="me" revision="arrow-13.1" />
+        <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="me" revision="arrow-13.1" />
+        <project path="vendor/arrow" name="android_vendor_arrow" remote="me" revision="arrow-13.1" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="me" revision="arrow-13.1" />
+        <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="me" revision="arrow-13.1-caf-sm8150" />
+        <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="me" revision="arrow-13.1-caf-sm8150" />
+        <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="me" revision="arrow-13.1-caf-sm8150" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="me" revision="arrow-13.1-wip" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="me" revision="arrow-13.1-wip" />
+        <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="arrow-gl" revision="arrow-13.1" />
+        <project path="packages/apps/GameSpace" name="packages_apps_GameSpace-1" remote="me" revision="lineage-20.0" />
+        <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="me" revision="arrow-13.1" />
+        <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="me" revision="arrow-13.1" />
+                
+        <!-- build -->
+        <project path="build/make" name="android_build" remote="me" revision="arrow-13.1" >
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+        </project>
+        
+        <!-- Micam -->
+        <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="me" revision="arrow-12.0-a3" />
+        <!-- Sync trees -->
+        <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="me" revision="arrow-13.1-wip" />
+        <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="me" revision="arrow-13.1-wip" />
+        <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="me" revision="arrow-13.1" clone-depth="1" />
+     
+        
 </manifest>
