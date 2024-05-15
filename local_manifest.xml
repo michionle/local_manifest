@@ -3,9 +3,9 @@
 <manifest>
         
         <!-- remote -->
-        <remote name="me"
-        fetch="https://github.com/michionle" />
         <remote name="michi"
+        fetch="https://github.com/michionle" />
+        <remote name="me"
         fetch="https://github.com/mipa-ginkgo" />
         <remote name="af"
         fetch="https://github.com/crdroidandroid" />
