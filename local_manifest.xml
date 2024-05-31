@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<manifest>
-        
-        <!-- remote -->
-        <remote name="me"
-        fetch="https://github.com/michionle" />
-        <remote name="af"
-        fetch="https://github.com/crdroidandroid" />
-        
-        <!-- Sync trees -->
-        <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="me" revision="14.0" />
-        <project path="vendor/xiaomi/ginkgo" name="proprietary_vendor_xiaomi_ginkgo" remote="af" revision="14.0" />
-        <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="af" revision="14.0" clone-depth="1" />
-     
-        
+<manifest>        
+     <!-- Remote -->
+     <remote name="me"
+     fetch="https://github.com/michionle" />
+     <remote name="ivan"
+     fetch="https://github.com/garry-rogov" />
+     <remote name="tejas"
+     fetch="https://github.com/tejas101k" />
+
+     <!-- Trees -->
+     <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="me" revision="14.0" />
+     <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="ivan" revision="14" />
+     <project path="kernel/xiaomi/ginkgo" name="Cuh-kernel" remote="tejas" revision="fourteen" />
+
 </manifest>
