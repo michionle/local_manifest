@@ -10,10 +10,8 @@
      fetch="https://github.com/tejas101k" />
      <remote name="mipa"
      fetch="https://github.com/mipa-ginkgo" />
-     <remote name="orion"
-     fetch="https://github.com/OrionOS-prjkt" />
      <!-- Trees -->
-     <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo-willow" remote="me" revision="14.0" />
+     <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="me" revision="14.0" />
      <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="ivan" revision="14" />
      <project path="kernel/xiaomi/ginkgo" name="Cuh-kernel" remote="tejas" revision="fourteen" />
      <!-- Micam -->
