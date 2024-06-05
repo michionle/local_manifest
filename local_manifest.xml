@@ -6,14 +6,12 @@
      fetch="https://github.com/michionle" />
      <remote name="ivan"
      fetch="https://github.com/garry-rogov" />
-     <remote name="tejas"
-     fetch="https://github.com/tejas101k" />
      <remote name="mipa"
      fetch="https://github.com/mipa-ginkgo" />
      <!-- Trees -->
      <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="me" revision="14.0" />
      <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="ivan" revision="14" />
-     <project path="kernel/xiaomi/ginkgo" name="Cuh-kernel" remote="tejas" revision="fourteen" />
+     <project path="kernel/xiaomi/ginkgo" name="Cuh-kernel" remote="me" revision="fourteen" />
      <!-- Micam -->
      <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="mipa" revision="arrow-12.0-a3" />
 </manifest>
